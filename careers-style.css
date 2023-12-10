@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+*
+
+{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+    scroll-behavior: smooth;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    height: auto; /* Adjust as needed */
+    overflow-x: hidden;
+    margin: 0; /* Remove default margin */
+    background: #ffff;
+}
+.main-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .Carrie {
+    color: #112434;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+/*rounds the boarder of every header*/
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+}
+
+/*this creates hover boxes around the users mouse*/
+header ul li a:hover, 
+header ul li a.active {
+    background: #112434;
+    color: #ffff;
+}
+
+.parallax {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+.parallax img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.parallax img#man {
+    z-index: 100;
+    margin-left: -70;
+}
+
+.parallax img#plants {
+    z-index: 101;
+}
+section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #112434, transparent);
+    z-index: 1000;
+}
+
+#title {
+    font-size: 4em;
+    margin-left: 230;
+    color: rgb(0, 0, 0)
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: aliceblue;
+}
+
+.sec1 {
+    margin-top: -100px;
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.sec1 h2 {
+    font-size: 2em;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.sec1 p {
+    margin-top: 50px;
+    font-size: 1em;
+    color: aliceblue;
+}
+#quant {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 1150px;
+    height: 525px;
+}
+
+.sec2 {
+    margin-top: -100px;
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.sec2 h2 {
+    font-size: 2em;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.sec2 p {
+    margin-top: 50px;
+    font-size: 1em;
+    color: aliceblue;
+}
+#astro {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 1150px;
+    height: 525px;
+}
+
+.sec3 {
+    margin-top: -100px;
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.sec3 h2 {
+    font-size: 2em;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.sec3 p {
+    margin-top: 50px;
+    font-size: 1em;
+    color: aliceblue;
+}
+#astro {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 1150px;
+    height: 525px;
+}
+
+.sec4 {
+    margin-top: -100px;
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.sec4 h2 {
+    font-size: 2em;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.sec4 p {
+    margin-top: 50px;
+    font-size: 1em;
+    color: aliceblue;
+}
+#games {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 1150px;
+    height: 525px;
+}
+
+.sec5 {
+    margin-top: -100px;
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+
+.sec5 h2 {
+    font-size: 2em;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.sec5 p {
+    margin-top: 50px;
+    font-size: 1em;
+    color: aliceblue;
+}
+#code {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 1150px;
+    height: 525px;
+}
+
+#cyber  {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 1150px;
+    height: 525px;
+}
+
+.sec6 {
+    margin-top: -100px;
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+
+.sec6 h2 {
+    font-size: 2em;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.sec6 p {
+    margin-top: 50px;
+    font-size: 1em;
+    color: aliceblue;
+}

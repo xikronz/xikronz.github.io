@@ -1,0 +1,248 @@
+<html lang="en">
+    <head>
+        <title>Carrie's IDC4U Website</title>
+        <link rel="stylesheet" type="text/css" href="careers-style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="Carrie Chen">Carrie Chen</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="careers-research.html">Careers Research</a></li>
+                <li><a href="#">Initial Plan</a></li>
+                <li><a href="#">Expert Interview</a></li>
+                <li><a href="#">Pilosophy</a></li>
+                <li><a href="#">Project Work</a></li>
+            </ul>
+        </header>
+        <section class="parallax">
+            <h2 id="title"> Careers Research</h2>
+            <img src="images/monutain_01.png" id="m1">
+            <img src="images/trees_02.png" id="t2">
+            <img src="images/monutain_02.png" id="m2">
+            <img src="images/trees_01.png" id="t1">
+            <img src="images/man.png" id="man">
+            <img src="images/plants.png" id="plants">
+        </section>
+        
+        <div class="sec" id="sec"> 
+            <h2>Careers in Mathematics Overview</h2>
+            <p>Mathematics has always seemed limitless to me and this project is a reflection of that sentiment. The more you think you 
+                understand a concept, the more there is to explore, and the more you realize you want to know. It's as if the subject  
+                seems to be constantly unravelling from itself without end! This year, I've dediced to deepen my understanding and application of mathematics 
+                by investigating 6 potential careers: Quantative Analyst, Astrobiologist, Robotics Engineer, Game Developper,  
+                Cryptographer and Full Stack Web Developper. Throughout the year, I'll be taking a deep dive into 2 of them, Cryptographer and Robotics Engineer, to fully immerse myself into the interdisciplinary world of math!
+            </p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.from('#m1', {
+                scrollTrigger : {
+                    scrub: true
+                }, 
+                y: 100, 
+            })
+            gsap.from('#m2', {
+                scrollTrigger : {
+                    scrub: true
+                }, 
+                y: 50, 
+            })
+            gsap.from('#t2', {
+                scrollTrigger : {
+                    scrub: true
+                }, 
+                x: -50, 
+            })
+            gsap.from('#t1', {
+                scrollTrigger : {
+                    scrub: true
+                }, 
+                x: 50, 
+            })
+            gsap.from('#plants', {
+                scrollTrigger : {
+                    scrub: true
+                }, 
+                x: -50, 
+            })
+            gsap.from('#man', {
+                scrollTrigger : {
+                    scrub: true
+                }, 
+                x: -150, 
+            })
+            gsap.from('#title', {
+                scrollTrigger : {
+                    scrub: true
+                }, 
+                x: -10, 
+            })
+        </script>
+
+    <div class="sec1" id="sec1"> 
+        <h2>Quantative Analyst</h2>
+        <img src="images/quant.png" id="quant">
+        <p>A recently emerging career, quantitative analysts (quants for short) work for investment banks, 
+            stock brokerages and wealth management firms to perform financial analysis. Their role is pivot
+            al in today's finance industry, where they employ advanced mathematical models to analyze financ
+            ial markets and assess risk.
+            <br><br>
+            Quants typically have a strong mathematics, statistics, finance, and computer science background.
+             Their expertise lies in creating sophisticated models that predict market trends, price financi\
+             al instruments, and develop algorithmic trading strategies. The first-year course load includes c
+             alculus, linear algebra, differential equations, and probability theory to model the behaviour o
+             f financial markets. 
+            <br><br> 
+            A typical career progression of a Quant would look as follows: 
+            
+            <br><br>
+            These models are used by traders and portfolio managers for pricing derivatives, managing risk, 
+            and optimizing portfolios. Quants also utilize stochastic calculus which is essential in valuing 
+            more complex 
+            financial products like options and futures. In addition to these mathematical skills, quants must 
+            also be proficient in programming 
+            languages. C++ is typically used for high-frequency trading applications, and offline statistical 
+            analysis would be performed in MATLAB, SAS, S-PLUS or a similar package.
+        </p>
+    </div>
+
+    <div class="sec2" id="sec2"> 
+        <h2>Astrobiologist</h2>
+        <img src="images/astrobio.png" id="astro">
+        <p>At its core, astrobiologists use mathematical modeling to search for the potential 
+            of life on other planets by understanding the chemical and physical processes that 
+            could lead to the emergence of life, such as the formation of organic molecules. Th
+            ese models are often based on differential equations that describe rate processes, th
+            ermodynamics, and chemical kinetics.
+            <br><br>
+            They also play a crucial role in the interpretation of data received from telescopes 
+            and space missions. Astrobiologists analyze patterns and anomalies in this data to draw 
+            conclusions about planetary environments using topology which they encounter in second/
+            third year university. It provides a way to capture the shape of data across different 
+            scales by facilitating features extraction (like clusters, loops, or voids). 
+            <br><br>
+            In their first year of studies, most students take real analysis and abstract algebra 
+            for its insights into the symmetry of polynomial equations. Complex analysis is used 
+            in wave propagation simulations and fluid dynamics. Topology is subtly used to observe 
+            spatial structures, like the shapes of molecules essential to life. 
+            
+        </p>
+    </div>
+
+    <div class="sec3" id="sec3"> 
+        <h2>Robotics Engineer</h2>
+        <img src="images/robot.png" id="astro">
+        <p>Robotics engineers are responsible for designing, building, and maintaining integrated robo
+            tic systems used everyday from autonomous driving to assembly management. Their focus lies
+             in optimizing task efficiency and facilitating human-robot interactions. 
+            <br><br>
+            The technique used to manipulate joints and precise arm motion calibration is called inverse 
+            kinematics, an extension of first year calculus and Euclidean geometry used to solve for the 
+            angles required in multi-joint systems. Its essential for enabling robots to interact with 
+            their environment in a fluid and natural manner. Control theory is responsible for managing 
+            the behavior of dynamic systems to perform the desired task. At a graduate level, students 
+            specializes into core modules like computational geometry, which deals with algorithms for 
+            path planning, object recognition, and environment mapping.
+                
+        </p>
+    </div>
+
+    <div class="sec4" id="sec4"> 
+        <h2>Game Developper</h2>
+        <img src="images/pac.png" id="games">
+        <p>Behind every blockbuster game, whether it’s modern pvps ike Valorant, Fortnite, CS:GO, or 
+            retro classics like pac man and eldin ring, is one core subject game developers rely on: 
+            mathematics. Its prevalence has led to industry terms like “shader math”, “queue theory”, 
+            “discrete stacks” that focus on user experiences to make games so immersive today. 
+            <br><br> 
+            In the realm of graphics and rendering, first year university students take linear algebra
+             to handle spatial transformations. Eigenvalues are used to create and manipulate 3D enviro
+             nments, while matrix operations handle complex transformations that make the game world dy
+             namic and immersive. Discrete mathematics, like set theory, introduces data structures whi
+             ch are used in AI and pathfinding. They’re essential for FPS games like CS:GO who leverage
+             graph theory to navigate complex environments. Decision trees also help create adaptive AI
+             opponents, making each game experience unique.
+            <br><br>
+            While much of the back end aspects of game development relies on computer science, it’s 
+            the integration of mathematics that truly brings games to life.
+            
+                
+        </p>
+    </div>
+
+    <div class="sec5" id="sec5"> 
+        <h2>Cryptographer</h2>
+        <img src="images/cyber.png" id="cyber">
+        <p>Cryptographers lay the foundations for rapid digitalization in the 21st century through their w
+            ork with securing data and information. By using mathematical algorithms, they’re able to tran
+            sform readable data (plaintext) into a coded form (ciphertext) that can only be decoded by the 
+            intended recipient. 
+            <br><br>
+            In first year university, a core module is abstract algebra, specifically group theory, ring th
+            eory, and fields, which is used to understand the algebraic structures used in algorithms like el
+            liptic curve cryptography. In number theory, prime numbers are a key player for “scrambling” bit-
+            wise data into information that are so computationally intensive to break by brute force, it wou
+            ld take longer than the heat death of the universe for a NVIDIA GeForce Rtx 4050 to do so! Public 
+            private key pairs are built on these sets for their inherent lack of factorization patterns. Discr
+            ete probability, modular arithmetic, and Diophantine equations are also taught to prepare students f
+            or analyzing the security and efficiency of cryptography systems.
+            <br><br>
+            The proliferation of big data analytics, cloud computing, and the Internet of Things (IoT) has led 
+            to an era where data is the new currency. Where privacy because a vice and megacorporation stores 
+            every second of your online footprint. In such a world, the potential for data breaches and cyber-attacks 
+            escalates, making the work of cryptographers more crucial than ever. 
+     
+        </p>
+    </div>
+
+    <div class="sec5" id="sec5"> 
+        
+        <h2> Web Developper</h2>
+        <img src="images/code.png" id="code">
+        <p> In the realm of web development, both front-end and back-end developers engage with mathematics, 
+            though in distinct ways. 
+            <br><br> 
+            Front-end developers often utilize basic arithmetic and algebra for layout design, ensuring 
+            elements are proportionally scaled and spaced. Geometry plays a role in manipulating shapes 
+            and layouts, particularly with CSS Grid and Flexbox for responsive web designs. Trigonometry 
+            can be applied in creating dynamic animations and transitions, enhancing visual appeal. Addit
+            ionally, a basic understanding of statistics helps in analyzing user interaction data to refi
+            ne the user experience. On the back-end side, a more profound engagement with mathematics is seen.</p>
+        </p>
+    </div>
+    
+    <div class="sec6" id="sec6"> 
+        <h2>Reflection</h2>
+
+        <p>
+            For the past several months, I honed in on my literature review skills and realized that career 
+            research takes a lot more time and effort than I expected. Some careers like an Astrobiologist 
+            don’t have a definitive path in undergraduate university and subsequent years, they’re truly 
+            interdisciplinary in the sense that specialists often major in two subjects (math and physics, 
+            math and biology, math and astronomy etc…). Different institutions offer different courses and 
+            I wanted to paint a full picture of what’s available for aspiring mathematicains, so I used a 
+            combination of resources from CMU, the University of Toronto, and governmental organizations 
+            like NASA for this report. 
+            <br><br>
+            I’ve always wanted to learn HTML, CSS, Node.js which are web developing tools that involve math, 
+            so I took this opportunity to create my own site instead of using applications like WIX or Wordpress. 
+            This turned out to be a really fascinating direction because, in the process of interacting with these 
+            languages, I realized that web developers also use mathematics. A potential career path from my research 
+            stemmed from me simply playing around with the scrollTrigger module from GSAP. 
+            <br><br>
+            I’m looking forward to diving deeper into Cryptography, Quantitative Analysts and Robotics Engineering. 
+            As an aspiring pure maths major, it’s really exciting for me because these are real career paths I’ve 
+            been considering after experiencing research at at undergraduate level during the Canadian Undergraduate 
+            Mathematics Conference.
+            
+        </p>
+
+
+    </div>
+
+
+    </body>
+</html>
