@@ -1,0 +1,137 @@
+<html lang="en">
+    <head>
+        <title>Carrie's IDC4U Website</title>
+        <link rel="stylesheet" type="text/css" href="ip.css">
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="Carrie Chen">Carrie Chen</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="careers-research.html">Careers Research</a></li>
+                <li><a href="initial plan.html">Initial Plan</a></li>
+                <li><a href="field interview.html">Expert Interview</a></li>
+                <li><a href="philosophy paper.html">Philosophy</a></li>
+                <li><a href="#">Project Work</a></li>
+            </ul>
+        </header>
+        <section class="parallax">
+            <img src="images/bg.jpg" id="bg">
+            <img src="images/moon (1).png" id="moon">
+            <img src="images/mountain.png" id="mountain">
+            <img src="images/road.png" id="road">
+            <h2 id="text">Planning my IDC4U Journey</h2>
+        </section>
+
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain =  document.getElementById("mountain");
+            let road =  document.getElementById("road");
+            let text =  document.getElementById("text");
+
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.left = -value * 0.5 + 'px';
+                mountain.style.top = -value * 0.15 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 0.5 + 'px';
+            })
+        </script>
+        <div class="sec1" id="sec1"> 
+            <h1>Roadmap</h1>
+            <br>
+            <h2>Machine Learning and Linear Algebra</h2>
+            <p>
+                Driving Question: How is mathematics used to drive the computation behind machine learning algorithms and what role do 
+                they play in the field of Recommendation systems? 
+                <br><br>
+                Plan: My plan for this curriculum is to approach each module, whether that be mathematics or computer science based, with a three pronged attack: 
+                    <br>
+                   Stage 1: Research  
+                    <br>
+                    Stage 2: Review  
+                    <br>
+                    Stage 3: Execute  
+                    <br><br>
+                By tackling such a broad and deep field like Machine Learning this way, I can make sure that I
+                get the most out of my learning by conducting in depth research, reviewing what I learned each week
+                and practicing what I learned via projects. I've broken up all the topics I want to learn into the following modules,
+                with expected dates of completion and resources I'll be using to support my learning. Of course, there'll be topics in the math curriculum
+                will overlap with matrix units in the IDC4U course, but rest assured, things will heavily diverge later on. I'm also
+                fiarly certain that I won't be able to learn everything, but I'll do as much as I can as well as prioritize depth over breath. Some resources might not 
+                be available online without permission from the instructor (such as courses by Cornell University), if that 
+                is the case, please feel free to reach out to me so I can share it via pdf or ppt:  
+                <br>
+                <br>
+            </p>
+            <h3>Module 1: Foundations</h3>
+            <p>
+                Research What is ML: Explore the definition of machine learning, how it differs from traditional programming, and its role in data-driven decision making.
+                <br><br>
+                Review Supervised vs. Unsupervised: Brush up on basic traning workflows that include labeled and unlaeled data. Understand the special uses of each case. 
+                <br>
+                Review Reinforcement learning: Understand the process of learning what actions to take in an environment to maximize some notion of cumulative reward.
+                <br>
+                Resources: Intro to Machine Learning (Andrew NG)
+                <br>
+                <br>
+            </p>
+            <h3>Module 2: Tools and Programming</h3>
+            <p>
+                Research Python: Develop proficiency in Python, the most popular language for machine learning, due to its simplicity and the vast availability of libraries.
+                <br><br>
+                Review numpy, Pandas, Matplotlib libraries: Learn data manipulation and analysis using the Pandas dataframe structures. Use Matplotlib to create static and inyeractive visuals of the data. 
+                <br>
+                Review Tensorflow: Dive into this end-to-end open-source platform for machine learning and use Keras to build a one-hot encoding system to transform categorical data into numerical. 
+                <br>
+                Resources: freeCodeCamp official tensorflow tutorial (youtube), tensorflow documentation, CS 4780 (Cornell University)
+                <br><br>
+            </p>
+            <h3>Module 2: Mathematics of ML</h3>
+            <p> 
+                Research: The fundamentals of probability, including independent events, conditional probability, and Bayes' Theorem.
+                <br><br>
+                Review descriptive statistics: Brush up on summarazing and describing data using measures such as mean, median, mode and standard deviation. 
+                <br>
+                Review Bayes formula: Look into the fundamentals of probability, including independent events, conditional probability, and Bayes' Theorem.
+                <br>
+                Resources: Statistics for Machine Learning by Pratap Dangeti (Book), Ap Statistics course (Mr.Lewis)
+                <br> <br>
+                Research: Linear algebra structures and their derivatives in python such as Matricies and tensors. 
+                <br><br>
+                Review Linear Transformations: Learn how to reshape the data using linear transformaations and matrix decomposition. 
+                <br> 
+                Review Eigenvalues:  Explore the importance of these in optimizations and in understanding the data structures used in machine learning.
+                <br>
+                Review Matrix Decomposition:  the process of breaking down a matrix into a product of multiple matrices. This technique is fundamental in numerical analysis, linear algebra, and related fields, offering a way to simplify complex matrix operations
+                <br> 
+                Resources: IDC4U course (Mr. Lewis), Linear Algebra Done Right (Book)
+                <br><br>
+            </p>
+            <h3>Algorithms and Graph Theory (interdisciplinary) </h3>
+            <p>
+                Research: Linear and Logistic Regression for predicting continuous, numerical data or classify binary outcomes. 
+                <br> <br>
+                Review Decision Trees: Explore thus method for classification and regression that build models in the form of a tree structure.
+                <br>
+                Review Markov Graphs: The mathematical model used in probability theory to model complex joint distributions over a set of random variables with an undirected graph.
+                <br><br>
+            </p>
+            <h3>Recommendation Systems (interdisciplinary) </h3>
+            <p>
+                Research: The importance of RS in social media platforms and varius content heavy industries and common metrics for evaluating their effectiveness.
+                <br><br>
+                Review Content-based Filtering:  Explore techniques that recommend items similar to what a user has liked before, focusing on features associated with the items.
+                <br> 
+                Collaboration-based Filtering: Recommendations made based on the preferences of similar users by tracking their data on the platform. This method assumes that users who agreed in the past will agree in the future.
+                <br> 
+                Resources: CS 155 (Caltech), FreeCodeCamp RS Systems tutorial (youtube)
+            </p>
+        </div>
+    </body>
+</html>
